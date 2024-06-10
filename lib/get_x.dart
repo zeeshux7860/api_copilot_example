@@ -1,18 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:test_app/api/get_controller/cart.dart';
-import 'package:test_app/api/get_controller/dummy_api.dart';
-import 'package:test_app/api/get_controller/products.dart';
-import 'package:test_app/api/util/get_callback.dart';
+import 'package:myapp/api/util/get_callback.dart';
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key});
+class GetxPage extends StatefulWidget {
+  const GetxPage({super.key});
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<GetxPage> createState() => _GetxPageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _GetxPageState extends State<GetxPage> {
   @override
   void initState() {
     callBackGetx.productsController.getAll();
@@ -23,7 +20,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Obx(
       () {
-        var ds = callBackGetx.productsController.getAllModel.value;
+        var ds = callBackGetx.getAllModel.value;
         return Scaffold(
           appBar: AppBar(
             title: const Text('Home Page'),

@@ -28,3 +28,4 @@ class NavigationObserver extends NavigatorObserver {
     callBackProvider.init(value: route.navigator!.context);
   }
 }
+

@@ -1,6 +1,6 @@
 import 'package:http/http.dart';
 
-import 'package:test_app/api/util/global_handler.dart';
+import 'package:myapp/api/util/global_handler.dart';
 
 Future<Response> fetchGetAllMethod() async {
   // This is the url that will be called:

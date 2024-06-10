@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'dart:html' if (dart.library.io) 'dart:io';
 
 import 'package:file_picker/file_picker.dart';

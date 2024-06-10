@@ -1,12 +1,12 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
-import 'package:test_app/api/model/products/get_all.dart';
-import 'package:test_app/api/query/products/get_all.dart';
-import 'package:test_app/api/model/products/single_product.dart';
-import 'package:test_app/api/query/products/single_product.dart';
-import 'package:test_app/api/model/products/search_products.dart';
-import 'package:test_app/api/query/products/search_products.dart';
+import 'package:myapp/api/model/products/get_all.dart';
+import 'package:myapp/api/query/products/get_all.dart';
+import 'package:myapp/api/model/products/single_product.dart';
+import 'package:myapp/api/query/products/single_product.dart';
+import 'package:myapp/api/model/products/search_products.dart';
+import 'package:myapp/api/query/products/search_products.dart';
 
 class CallBackProducts {
   Future<GetAllModel?> getAll() async {

@@ -1,14 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:provider/provider.dart';
-import 'package:test_app/api/get_controller/cart.dart';
-import 'package:test_app/api/get_controller/dummy_api.dart';
-import 'package:test_app/api/get_controller/products.dart';
 
-import 'package:test_app/api/provider/products.dart';
-import 'package:test_app/api/provider/cart.dart';
-import 'package:test_app/api/provider/dummy_api.dart';
-import 'package:test_app/api/util/get_callback.dart';
+import 'package:myapp/api/get_controller/products.dart';
+import 'package:myapp/api/get_controller/cart.dart';
+import 'package:myapp/api/get_controller/dummy_api.dart';
+
 
 class GetxApp extends StatelessWidget {
   final Widget child;
@@ -16,9 +12,9 @@ class GetxApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Get.lazyPut(() => ProductsController());
-    Get.lazyPut(() => CartController());
-    Get.lazyPut(() => DummyApiController());
+  Get.lazyPut(() => ProductsController());
+Get.lazyPut(() => CartController());
+Get.lazyPut(() => DummyApiController());
 
     return Builder(
       builder: (context) {
@@ -27,3 +23,4 @@ class GetxApp extends StatelessWidget {
     );
   }
 }
+

@@ -1,26 +1,13 @@
 import 'package:get/get.dart';
 
-import 'package:test_app/api/get_controller/products.dart';
-import 'package:test_app/api/get_controller/cart.dart';
-import 'package:test_app/api/get_controller/dummy_api.dart';
+import 'package:myapp/api/get_controller/products.dart';
+import 'package:myapp/api/get_controller/cart.dart';
+import 'package:myapp/api/get_controller/dummy_api.dart';
+import 'get_callback_get_x.dart';
 
-var callBackGetx = CallBackGetx.instance;
+var callBackGetx = GetCallBackGetx.instance;
 
 class CallBackGetx {
-  /// init method
-  ///  [config] is required to get callback from phonepe gateway app to your app after payment is done or failed or cancelled by user or by phonepe gateway app itself due to some error or any other reason
-  void init() {
-    Get.lazyPut(() => ProductsController());
-    Get.lazyPut(() => CartController());
-    Get.lazyPut(() => DummyApiController());
-  }
-
-  void check() {
-    // put or not
-    var check = Get.isRegistered<ProductsController>();
-    print('ProductsController isRegistered: $check');
-  }
-
   // instance of this class
   static final CallBackGetx _instance = CallBackGetx();
 

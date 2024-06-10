@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:test_app/api/util/provider_callback.dart';
+import 'package:myapp/api/util/provider_callback.dart';
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key});
+class ProviderPage extends StatefulWidget {
+  const ProviderPage({super.key});
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<ProviderPage> createState() => _ProviderPageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _ProviderPageState extends State<ProviderPage> {
   @override
   void initState() {
     callBackProvider.productsProviderWithoutListener.getAll();

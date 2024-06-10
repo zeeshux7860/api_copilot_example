@@ -1,8 +1,8 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
-import 'package:test_app/api/model/cart/get_my_cart.dart';
-import 'package:test_app/api/query/cart/get_my_cart.dart';
+import 'package:myapp/api/model/cart/get_my_cart.dart';
+import 'package:myapp/api/query/cart/get_my_cart.dart';
 
 class CallBackCart {
   Future<GetMyCartModel?> getMyCart() async {

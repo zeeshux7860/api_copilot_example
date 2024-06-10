@@ -1,8 +1,8 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
-import 'package:test_app/api/model/add_product.dart';
-import 'package:test_app/api/query/add_product.dart';
+import 'package:myapp/api/model/add_product.dart';
+import 'package:myapp/api/query/add_product.dart';
 
 class CallBackDummyApi {
   Future<AddProductModel?> addProduct(

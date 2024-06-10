@@ -1,8 +1,10 @@
+import 'dart:convert';
+
 import 'package:http/http.dart';
 
-import 'package:test_app/api/query/params/add_product.dart';
-export 'package:test_app/api/query/params/add_product.dart';
-import 'package:test_app/api/util/global_handler.dart';
+import 'package:myapp/api/query/params/add_product.dart';
+export 'package:myapp/api/query/params/add_product.dart';
+import 'package:myapp/api/util/global_handler.dart';
 
 Future<Response> fetchAddProductMethod(
     {required ParamsAddProduct params, Map<String, String>? headers}) async {

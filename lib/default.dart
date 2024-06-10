@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:test_app/api/callback/products.dart';
-import 'package:test_app/api/model/products/get_all.dart';
+import 'package:myapp/api/callback/products.dart';
+import 'package:myapp/api/model/products/get_all.dart';
 
 class WithoutStateMangement extends StatefulWidget {
   const WithoutStateMangement({super.key});
@@ -10,7 +10,7 @@ class WithoutStateMangement extends StatefulWidget {
 }
 
 class _WithoutStateMangementState extends State<WithoutStateMangement> {
-  late GetAllModel? ds;
+  GetAllModel? ds;
   @override
   void initState() {
     getData();
